@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BPL-dream</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav
+      class="container mx-auto sticky top-0 flex items-center justify-between"
+    >
+      <div class="navbar bg-base-100 shadow-sm justify-between">
+        <div class="left-side">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" class="lg:hidden">
+                <a
+                  ><img class="cursor-pointer" src="./assets/logo.png" alt=""
+                /></a>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Fixture</a>
+                </li>
+                <li><a>Teams</a></li>
+                <li><a>Schedules</a></li>
+              </ul>
+            </div>
+            <a class="hidden lg:block"
+              ><img src="./assets/logo.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="right-side flex gap-5">
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li>
+                <a>Fixture</a>
+              </li>
+              <li><a>Teams</a></li>
+              <li><a>Schedules</a></li>
+            </ul>
+          </div>
+          <div>
+            <a class="btn"
+              ><span>0</span>Coin
+              <span><img src="./assets/DoubleDollar.png" alt="" /></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="container mx-auto bg-black rounded-xl">
+      <div
+        class="hero via-blue-500 to-cyan-400 bg-cover rounded-xl"
+        style="background-image: url(./assets/bg-shadow.png)"
+      >
+        <div class="flex flex-col py-5 md:py-20">
+          <img class="mx-auto" src="./assets/banner-main.png" alt="" />
+          <div class="hero-overlay"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div>
+              <h1 class="text-2xl md:text-5xl font-bold">
+                Assemble Your Ultimate Dream 11 Cricket Team
+              </h1>
+              <p class="mb-5">Beyond Boundaries Beyond Limits</p>
+              <div
+                class="btn btn-outline py-6 px-1 rounded-lg border-1 border-[#E7FE29] bg-none"
+              >
+                <button class="btn border border-none p-5 bg-[#E7FE29]">
+                  Claim Free Credit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto my-10">
+      <div class="flex items-center text-lg md:text-2xl justify-between">
+        <h1 class="font-bold">Available Players</h1>
+        <div class="flex">
+          <button class="btn bg-[#E7FE29] font-semibold border-none">
+            Available
+          </button>
+          <button class="btn btn-gost text-gray-500 border-none">
+            Selected <span>0</span>
+          </button>
+        </div>
+      </div>
+      <section class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- card-1 -->
+        <div class="flex flex-col bg-base-100 shadow-sm p-5">
+          <figure class="">
+            <img src="./assets/p-1.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="space-y-3">
+            <div class="flex items-center gap-4 text-2xl font-semibold pt-5">
+              <i class="fa-regular fa-circle-user"></i>
+              <h2 class="text-xl font-bold">Viral Kohli</h2>
+              <p></p>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex items-center gap-4 text-lg font-semibold">
+                <i class="fa-solid fa-flag"></i>
+                <p>India</p>
+              </div>
+              <button class="btn btn-ghost">All-Rounder</button>
+            </div>
+            <hr class="border border-slate-100" />
+            <div class="space-y-3 font-bold">
+              <p>Rating</p>
+              <p class="flex items-center justify-between">
+                <span>Left-Hand-Bat</span> <span>Left-Hand-Bat</span>
+              </p>
+              <div class="flex items-center justify-between">
+                <p>Price: $1500000</p>
+                <button class="btn">Choose Player</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div class="flex flex-col bg-base-100 shadow-sm p-5">
+          <figure class="">
+            <img src="./assets/p-1.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="space-y-3">
+            <div class="flex items-center gap-4 text-2xl font-semibold pt-5">
+              <i class="fa-regular fa-circle-user"></i>
+              <h2 class="text-xl font-bold">Viral Kohli</h2>
+              <p></p>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex items-center gap-4 text-lg font-semibold">
+                <i class="fa-solid fa-flag"></i>
+                <p>India</p>
+              </div>
+              <button class="btn btn-ghost">All-Rounder</button>
+            </div>
+            <hr class="border border-slate-100" />
+            <div class="space-y-3 font-bold">
+              <p>Rating</p>
+              <p class="flex items-center justify-between">
+                <span>Left-Hand-Bat</span> <span>Left-Hand-Bat</span>
+              </p>
+              <div class="flex items-center justify-between">
+                <p>Price: $1500000</p>
+                <button class="btn">Choose Player</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
