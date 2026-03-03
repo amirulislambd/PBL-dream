@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="main">
     <nav
       class="container mx-auto sticky top-0 z-2 flex items-center justify-between"
     >
@@ -29,7 +29,7 @@
             <div class="dropdown">
               <div tabindex="0" class="lg:hidden">
                 <a
-                  ><img class="cursor-pointer w-30" src="./assets/logo.png" alt=""
+                  ><img class="cursor-pointer w-30 " src="./assets/logo.png" alt=""
                 /></a>
               </div>
               <ul
@@ -62,7 +62,7 @@
           </div>
           <div>
             <a class="btn"
-              ><span>0</span>Coin
+              ><span id="coins">500</span>Coin
               <span><img src="./assets/DoubleDollar.png" alt="" /></span
             ></a>
           </div>
@@ -102,12 +102,12 @@
           <button class="btn bg-[#E7FE29] font-semibold border-none">
             Available
           </button>
-          <button class="btn btn-gost text-gray-500 border-none">
+          <button class="selected btn btn-gost text-gray-500 border-none">
             Selected <span>0</span>
           </button>
         </div>
       </div>
-      <section class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <section id="card-section" class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <!-- card-1 -->
         <div class="flex flex-col bg-base-100 shadow-sm p-5">
           <figure class="">
@@ -140,14 +140,16 @@
           </div>
         </div>
         <!-- card-2 -->
-        <div class="flex flex-col bg-base-100 shadow-sm p-5">
+        <div class="card flex flex-col bg-base-100 shadow-sm p-5">
           <figure class="">
-            <img src="./assets/p-1.png" alt="Shoes" class="rounded-xl" />
+            <img  src="./assets/p-1.png" alt="Shoes" class="card-img rounded-xl" />
           </figure>
           <div class="space-y-3">
             <div class="flex items-center gap-4 text-2xl font-semibold pt-5">
-              <i class="fa-regular fa-circle-user"></i>
-              <h2 class="text-xl font-bold">Viral Kohli</h2>
+              <div class="rounded-full p-1 border border-yellow-300 shadow-yellow-100 shadow-lg">
+                <img class="rounded-full w-10 h-10" src="./assets/p-1.png" alt="">
+              </div>
+              <h2 class="card-title text-xl font-bold">Viral Kohli</h2>
               <p></p>
             </div>
             <div class="flex justify-between">
@@ -161,11 +163,11 @@
             <div class="space-y-3 font-bold">
               <p>Rating</p>
               <p class="flex items-center justify-between">
-                <span>Left-Hand-Bat</span> <span>Left-Hand-Bat</span>
+                <span class="hand">Left-Hand-Bat</span> <span>Left-Hand-Bat</span>
               </p>
               <div class="flex items-center justify-between">
-                <p>Price: $1500000</p>
-                <button class="btn">Choose Player</button>
+                <p class="player-price">Price: $1500000</p>
+                <button class="choose-btn btn">Choose Player</button>
               </div>
             </div>
           </div>
@@ -214,7 +216,7 @@
             </p>
             <div class="flex mx-auto">
               <input
-                class="border-none bg-gray-100 outline-none"
+                class="border-none bg-gray-100 outline-none p-2 "
                 type="email"
                 name="email"
                 id=""
@@ -230,7 +232,7 @@
       </section>
     </main>
     <footer class="bg-black pt-40 mx-auto ">
-      <img class="mx-auto" src="./assets/logo-footer.png" alt="">
+      <img class="mx-auto  animate-pulse" src="./assets/logo-footer.png" alt="">
       <section
         class="container mx-auto flex flex-col md:flex-row justify-between bg-black text-white p-10"
       >
@@ -272,5 +274,6 @@
       <hr class="border border-gray-700 my-2 md:my-4">
       <h3 class="text-white text-center pb-8 md:pb-12">@2024 Your Company All Rights Reserved.</h3>
     </footer>
+    <script src="./js/home.js"></script>
   </body>
 </html>

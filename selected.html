@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BPL-dream</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav
+      class="container mx-auto sticky top-0 z-2 flex items-center justify-between"
+    >
+      <div class="navbar bg-base-100 shadow-sm justify-between">
+        <div class="left-side">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" class="lg:hidden">
+                <a
+                  ><img class="cursor-pointer w-30" src="./assets/logo.png" alt=""
+                /></a>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Fixture</a>
+                </li>
+                <li><a>Teams</a></li>
+                <li><a>Schedules</a></li>
+              </ul>
+            </div>
+            <a class="hidden lg:block w-50"
+              ><img src="./assets/logo.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="right-side flex gap-5">
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li>
+                <a>Fixture</a>
+              </li>
+              <li><a>Teams</a></li>
+              <li><a>Schedules</a></li>
+            </ul>
+          </div>
+          <div>
+            <a class="btn"
+              ><span>0</span>Coin
+              <span><img src="./assets/DoubleDollar.png" alt="" /></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="container mx-auto bg-black rounded-xl my-5">
+      <div
+        class="hero via-blue-500 to-cyan-400 bg-cover rounded-xl"
+        style="background-image: url(./assets/bg-shadow.png)"
+      >
+        <div class="flex flex-col py-5 md:py-20">
+          <img class="mx-auto" src="./assets/banner-main.png" alt="" />
+          <div class="hero-overlay"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div>
+              <h1 class="text-2xl md:text-5xl font-bold">
+                Assemble Your Ultimate Dream 11 Cricket Team
+              </h1>
+              <p class="mb-5">Beyond Boundaries Beyond Limits</p>
+              <div
+                class="btn bg-black py-6 px-1 rounded-lg  border-1 border-white "
+              >
+                <button class="btn bg-gradient-to-tr from-pink-400 to-yellow-300 rounded-r-lg border-none">
+                  Claim Free Credit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto my-10 pb-30">
+      <div class="flex flex-col md:flex-row items-center text-xl md:text-2xl justify-between space-y-2">
+        <h1 class="font-bold">Selected Player (<span>0</span>/<span>0</span> )</h1>
+        <div class="flex">
+          <button class="btn bg-[#E7FE29] font-semibold border-none">
+            Available
+          </button>
+          <button class="btn btn-gost text-gray-500 border-none">
+            Selected <span>0</span>
+          </button>
+        </div>
+      </div>
+    
+      <section class=" rounded-xl w-full relative">
+        <div class="absolute top-10 md:top-10 w-full border p-2 md:p-3 border-white rounded-xl">
+          <div
+          class="hero  rounded-xl p-2  bg-white"
+          style="background-image: url(&quot;./assets/bg-shadow.png&quot;)"
+        >
+          <div class="text-center py-10 flex flex-col space-y-3">
+            <h1 class="text-2xl font-bold">Subscribe to our Newsletter</h1>
+            <p class="text-xl font-semibold text-gray-500">
+              Get the latest updates and news right in your inbox!
+            </p>
+            <div class="flex mx-auto">
+              <input
+                class="border-none bg-gray-100 outline-none"
+                type="email"
+                name="email"
+                id=""
+              />
+              <button class="btn bg-gradient-to-tr from-pink-400 to-yellow-300">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      </section>
+    </main>
+    <footer class="bg-black pt-40 mx-auto ">
+      <img class="mx-auto" src="./assets/logo-footer.png" alt="">
+      <section
+        class="container mx-auto flex flex-col md:flex-row justify-between bg-black text-white p-10"
+      >
+        <nav>
+          <h6 class="footer-title">About Us</h6>
+          <p>
+            We are a passionate team <br />
+            dedicated to providing the best <br />
+            services to our customers.
+          </p>
+        </nav>
+
+        <nav class="list-none md:list-disc">
+          <h6 class="footer-title">Quick Links</h6>
+          <a class="link link-hover"><li>Home</li></a>
+          <a class="link link-hover"><li>Services</li></a>
+          <a class="link link-hover"><li>About</li></a>
+          <a class="link link-hover"><li>Contact</li></a>
+        </nav>
+        <form >
+          <h6 class="footer-title">Subscribe</h6>
+          <p>
+            Subscribe to our newsletter for the <br />
+            latest updates.
+          </p>
+          <fieldset class="w-80 ">
+            <div class="join ">
+              <input
+              
+                type="text"
+                placeholder="Enter your email"
+                class="input input-bordered join-item text-gray-600"
+              />
+              <button class="btn bg-gradient-to-tr from-pink-400 to-yellow-300 rounded-r-lg border-none">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <hr class="border border-gray-700 my-2 md:my-4">
+      <h3 class="text-white text-center pb-8 md:pb-12">@2024 Your Company All Rights Reserved.</h3>
+    </footer>
+  </body>
+</html>
